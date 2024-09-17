@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lekkertypen.nl</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>lekkertypen.nl</h1>
+    <img id="randomGif" alt="Random GIF">
+
+    <script>
+        const gifs = [
+            'gif1.gif', // Replace with actual paths or URLs to the GIFs
+            'gif2.gif',
+            'gif3.gif'
+        ];
+
+        const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
+        document.getElementById('randomGif').src = randomGif;
+    </script>
+</body>
+</html>
